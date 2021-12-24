@@ -54,7 +54,6 @@
         <section class="hero-section">
             <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
             <button class="hero-order" data-modal-open>Заказать услугу</button>
-
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="cloused" data-modal-close aria-label="Закрыть">
@@ -62,10 +61,42 @@
                             <use href="images/icons.svg#icon-Vector"></use>
                         </svg>
                     </button>
-
+                    <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <form class="form-lable">
+                        <label class="label-hero">
+                            <span class="title-lable">Имя</span>
+                            <input type="name" name="user-name" class="hero-input" required>
+                            <svg width=18px height=18px class="name-icon">
+                                <use href="./images/icons.svg#name"></use>
+                            </svg>
+                        </label>
+                        <label class="label-hero">
+                            <span class="title-lable">Телефон</span>
+                            <input type="tel" name="tel" class="hero-input" pattern="[0-9]{10}" title="0987654321">
+                            <svg width=18px height=18px class="name-icon">
+                                <use href="./images/icons.svg#tel"></use>
+                            </svg>
+                        </label>
+                        <label class="label-hero">
+                            <span class="title-lable">Почта</span>
+                            <input type="email" name="emale" class="hero-input">
+                            <svg width=18px height=18px class="name-icon">
+                                <use href="./images/icons.svg#email  "></use>
+                            </svg>
+                        </label>
+                        <label class="label-hero" class="hero-input">
+                            <span class="title-lable">Комментарий</span>
+                            <textarea class="textarea" name="" placeholder="Введите текст"></textarea>
+                        </label>
+                        <input type="checkbox" id="confirmation" class="i-confirmation">
+                        <label for="confirmation" class="confirmation">
+                            Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="a-confirmation">Условия
+                                договора</a>
+                        </label>
+                        <button type="submit" class="send">Отправить</button>
+                    </form>
                 </div>
             </div>
-
         </section>
         <!-- ====hero==== -->
         <!-- ====name list==== -->
@@ -401,6 +432,18 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-box-three">
+                <label class="label-e-mail">
+                    <span class="label-title">Подпишитесь на рассылку</span>
+                    <input type="email" placeholder="E-mail" class="e-mail">
+                </label>
+                <button class="bottom-three" type="button">
+                    <span class="name-botton">Подписаться</span>
+                    <svg width=24px height=24px>
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>
